@@ -162,7 +162,7 @@ nav > ul > li > a:hover{
     height: 100px;
 }
 #bannerDiv{
-    background-image: url(./media/group\ photo.jfif);
+    background-image: url(./media/group.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     width: 95%;
