@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+h1{
+    font-family: "Tangerine", cursive; 
+    font-weight: 900; 
+    text-shadow: #373B44 2px 5px;
+}
+
+    .artic{
+      height: 400px;
+      width: 320px;
+      min-width: 200px;
+      margin-left: 15px;
+      box-shadow:rgba(0, 0, 0, 0.4) 0px -50px 40px -32px inset;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius:0px 0px 10px 10px;
+      border:1px  solid  lightgrey;
+      margin-bottom:15px;
+    }
+  
+    .artic > h3{
+      text-align: center;
+    }
+   
+    .artic > a > button{
+      position: relative;
+      left: 100px;
+  
+    }
+    #section{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #e7739a;
+      height: 330px;
+      padding-top: 20px;
+    }
+  
+    #spany{
+      font-weight: 800;
+      text-align: center;
+      margin: 0px;
+    }
+
+    a2{
+        background-image: url(./media/group.jfif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90%;
+    }
+
+  
+  hr{
+    width:200px;
+  border: 1.7px solid #373B44 ;
+  }
+  /* CSS  copied from css scan button 89*/
+  .button-89 {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #373B44;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 14px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button-89:active {
+    background: var(--color);
+    color: #fff;
+  }
+
+
+/* class to use for toggling theme */
+.color{
+    background-color:#d30186 !important;
+    color: black !important ;
+    border-color: yellow;
+z-index: 3;
+}
+body{
+    background-color: black;
+    color: white;
+}
+/* style for theme button */
+
+#themeSwitch:hover{
+color: white;
+background-color: white;
+cursor: pointer;
+}
+
+/* style for links */
+
+nav > ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul > li {
+    list-style: none;
+    
+}
+nav > ul > li > a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #35b9be;
+    border: 1px solid #35b9be;
+    padding: 5px;
+}
+nav > ul > li > a:hover{
+    border-bottom: 2px black solid;
+    color: darkblue;
+    scale: 1.2;
+    transition: all 0.7s linear;
+}
+
+#logo{
+    height: 100px;
+}
+#bannerDiv{
+    background-image: url(./media/group\ photo.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 80vh;
+    justify-content: first baseline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    box-sizing: border-box;
+    gap: 10px;
+    margin: auto;
+    opacity: 0.8;
+    padding-top: 50px;
+}
+#spanny{
+    color: white;
+    display: block;
+  background-color: #e7739a;
+  border-radius:0px 0px 20px 20px;
+  opacity: 0.9;
+box-shadow: whitesmoke 0px 5px 19px;
+padding: 20px;
+}
+#smallSpanny{
+    color:#d30186;
+    font-size: large;
+    font-weight: 500;
+    text-shadow: lightslategray 5px 5px 5px;
+    padding: 50px 50px;
+}
+#bannerDiv > p {
+    width:80%;
+    font-size: ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#bannerDiv > a >button{
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid lightgreen ;
+    padding: 10px;
+    margin-top: 60px;
+}
+#bannerDiv > a >button:hover{
+    color: white;
+    border-color: white;
+    transition: all 0.7s ease;
+    cursor: pointer;
+    background-color: lightgrey;
+    color: green;
+    scale:1.1;
+    font-size: medium;
+}
+/* #footerNav{
+    position: absolute;
+    bottom: 0px;
+} */
+
+#ourProd{
+    text-align: center;
+    margin: 20px 0px;
+ 
+}
+
+#prodSect{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.prodCard{
+    min-width: 300px;
+    max-width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: darkslategray;
+    padding: 20px;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+.prodImg{
+    width: 200px;
+    height: 150px;
+    margin:10px;
+}
+.prodCard >  a{
+    /* text-decoration:none; */
+    color: goldenrod;
+    text-decoration: underline;
+    position: relative;
+    left: 50px;
+}
+.prodCard >  a:hover{
+    scale: 1.2;
+    transition: all 0.7s linear;
+    color: darkblue;
+}
+fieldset{
+    border: 2px solid goldenrod;
+    margin: 20px auto;
+    padding-bottom: 50px;
+    background-image: url(./media/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#logo {
+    width: 300px;
+  }
+  
+  #logo {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: vibrate 0.9s;
+    
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+  .footer-container{
+    margin: 80px 0px;
+  }
+  .footer-section1>div>ul>li>a,.footer-section2>div>ul>li>a{
+  text-decoration: none;
+  color: #666666ff;
+  }
+  .footer-section1>div>ul,.footer-section2>div>ul{
+    list-style: none;
+  }
+  span>a{
+    text-decoration: none;
+    color: green;
+  }
+  #categories{
+    display: inline;
+  }
+  #last-footer-element{
+    color: #666666ff;
+  }
+  .svg-footer{
+    border-radius: 70px;
+  }
+  @keyframes vibrate {
+    0% {
+        transform: scale( .95 );
+    }
+
+    20% {
+        transform: scale( .97 );
+    }
+
+    30% {
+        transform: scale( .95 );
+    }
+
+    40% {
+        transform: scale( 1 );
+    }
+
+    100% {
+        transform: scale( .95 );
+    }
+}
+
+
+#side-bar-toggle{
+  margin-left:30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.fa-bars{
+  background-color: white;
+}
+.sideBar {
+  background-color: #ffffff;
+  width: 320px;
+  height: 5000px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  padding: 10px;
+}
+
+.sideBar > a {
+  color: #253d4e;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sideBar > a:hover {
+  color: #509e2f;
+}
+.fa-solid {
+  margin: 20px 5px 5px 20px;
+}
+#topElement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#profile {
+  margin-left: 50px;
+  width: 42px;
+  height: 42px;
+  border-radius: 42px;
+  background-image: url(./media/transperant.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+ 
+@media (min-width:300px) and (max-width:768px){ 
+  fieldset{
+    background-image: url(./media/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+  }
+    .my-container {
+      flex-direction: column;
+    }
+    .logo {
+      border: none;
+    }
+    .search-div {
+      width: 100%;
+    }
+    .footer-container{
+      flex-direction: column;
+    }
+    #div1-footer-section,#div2-footer-section{
+      margin: auto;
+    }
+    #footer-heading2,#footer-heading1{
+      text-align: center;
+    }
+    .second-section-footer{
+    flex-direction: column;
+    text-align: center;
+    }
+
+  
+   }
+   .sideBar {
+    background-color:pink;
+    width: 320px;
+    height: 5000px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+  }
+  
+  .sideBar > a {
+    color: #253d4e;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .sideBar > a:hover {
+    color: #509e2f;
+  }
+  .fa-solid {
+    margin: 20px 5px 5px 20px;
+  }
+  #topElement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #profile {
+    margin-left: 50px;
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    background-image: url(./media/transperant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  #firstLink{
+    display: none;
+  }
+  #secondLink{
+    display: none;
+  }
+#logo{
+  display: none;
+}
+
+@media (min-width:769px)  { 
+  fieldset{
+    background-image: url(./media/prize2.jfif);
+  }
+  #navy{
+    display:inline-block;
+  }
+  #side-bar-toggle{
+    display: none;
+  }
+  #firstLink{
+    display: inline-block;
+  }
+  #secondLink{
+    display: inline-block;
+  }
+#logo{
+  display: inline-block;
+}
+}
